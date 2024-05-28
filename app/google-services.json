@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "37313211972",
+    "project_id": "tasker-e5c02",
+    "storage_bucket": "tasker-e5c02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37313211972:android:222bd2f2d992b9aa1b5611",
+        "android_client_info": {
+          "package_name": "com.example.tasker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37313211972-tvkrflt8n2gpta5p9atq12dpt5bkvrh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tasker",
+            "certificate_hash": "e12c07bf470d111b866fb9381a59881936ffcca7"
+          }
+        },
+        {
+          "client_id": "37313211972-he93aakdghbat252o2ovm3e47em4nt6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvEZbLiJNXxMxu93aWCGOK8L3H6Bk7y3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37313211972-he93aakdghbat252o2ovm3e47em4nt6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
