@@ -24,7 +24,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private EditText emailEditText, passwordEditText;
-    private Button loginButton;
+    private Button loginButton, registerButton;
     private FirebaseAuth mAuth;
 
     @Override
@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         emailEditText = findViewById(R.id.etEmail);
         passwordEditText = findViewById(R.id.etPassword);
         loginButton = findViewById(R.id.btnLogin);
+        registerButton = findViewById(R.id.btnGoRegister);
+
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -42,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 loginUser();
+            }
+        });
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start Pomodoro activity
+                Intent intent = new Intent(MainActivity.this, Register.class);
+                startActivity(intent);
             }
         });
     }
