@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Tasker</string>
+    <string name="back" />
+    <string name="forward" />
 </resources>
