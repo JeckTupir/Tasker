@@ -39,7 +39,6 @@ public class Pomodoro extends AppCompatActivity {
         start = findViewById(R.id.start);
         end = findViewById(R.id.End);
         home = findViewById(R.id.home);
-        reset = findViewById(R.id.reset);
         Intent intent = getIntent();
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -84,21 +83,11 @@ public class Pomodoro extends AppCompatActivity {
                 editor.commit();
                 end.setVisibility(View.GONE);
                 home.setVisibility(View.VISIBLE);
-                reset.setVisibility(View.VISIBLE);
                 home.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         startActivity(new Intent(Pomodoro.this, Dashboard.class));
                         finish();
-                    }
-                });
-                reset.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        timer.setText(value + ": 00");
-                        home.setVisibility(View.GONE);
-                        reset.setVisibility(View.GONE);
-                        start.setVisibility(View.VISIBLE);
                     }
                 });
 
@@ -118,6 +107,7 @@ public class Pomodoro extends AppCompatActivity {
                 countDownTimer.start();
                 start.setVisibility(View.GONE);
                 end.setVisibility(View.VISIBLE);
+
             }
         });
 
@@ -134,6 +124,7 @@ public class Pomodoro extends AppCompatActivity {
                                 timer.setText(value + " : 00");
                                 end.setVisibility(View.GONE);
                                 start.setVisibility(View.VISIBLE);
+                                home.setVisibility(View.VISIBLE);
                             }
                         })
                         .setNegativeButton("NO", new DialogInterface.OnClickListener() {

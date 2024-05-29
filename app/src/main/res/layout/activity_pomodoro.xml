@@ -57,10 +57,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progress_circular"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.219" />
 
     <Button
         android:id="@+id/End"
@@ -94,18 +94,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progress_circular"
         app:layout_constraintVertical_bias="0.979" />
-
-    <Button
-        android:id="@+id/reset"
-        android:layout_width="149dp"
-        android:layout_height="48dp"
-        android:background="#00FFFFFF"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/End"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toEndOf="@+id/start"
-        app:layout_constraintTop_toBottomOf="@+id/progress_circular"
-        app:layout_constraintVertical_bias="0.623" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
