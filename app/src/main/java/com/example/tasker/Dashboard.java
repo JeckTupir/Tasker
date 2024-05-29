@@ -31,7 +31,19 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to start Pomodoro activity
-                Intent intent = new Intent(Dashboard.this, Home.class);
+                Intent intent = new Intent(Dashboard.this, Pomodoro.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnTodo = findViewById(R.id.btnTodo);
+
+        // Set onClick Listener
+        btnTodo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start Pomodoro activity
+                Intent intent = new Intent(Dashboard.this, todo.class);
                 startActivity(intent);
             }
         });

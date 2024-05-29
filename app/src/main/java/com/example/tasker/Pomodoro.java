@@ -145,13 +145,26 @@ public class Pomodoro extends AppCompatActivity {
                 builder.create().show();
             }
         });
+
+        Button btnTodo = findViewById(R.id.btnTodo);
+
+        // Set onClick Listener
+        btnTodo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start Pomodoro activity
+                Intent intent = new Intent(Pomodoro.this, todo.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
 
-        startActivity(new Intent(Pomodoro.this, Home.class));
+        startActivity(new Intent(Pomodoro.this, Dashboard.class));
         finish();
     }
 }
