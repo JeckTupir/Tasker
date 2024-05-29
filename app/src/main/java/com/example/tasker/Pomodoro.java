@@ -83,13 +83,7 @@ public class Pomodoro extends AppCompatActivity {
                 editor.commit();
                 end.setVisibility(View.GONE);
                 home.setVisibility(View.VISIBLE);
-                home.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(Pomodoro.this, Dashboard.class));
-                        finish();
-                    }
-                });
+
 
 
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(Pomodoro.this, "channel")
@@ -108,6 +102,14 @@ public class Pomodoro extends AppCompatActivity {
                 start.setVisibility(View.GONE);
                 end.setVisibility(View.VISIBLE);
 
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Pomodoro.this, Dashboard.class));
+                finish();
             }
         });
 

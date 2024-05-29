@@ -105,11 +105,12 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:textSize="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:text="Today's achievement : " />
+                android:text="Today's achievement : "
+                android:textColor="#392A22"
+                android:textSize="15dp" />
             <TextView
 
                 android:layout_width="wrap_content"
