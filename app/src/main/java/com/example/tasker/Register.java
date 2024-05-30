@@ -50,6 +50,12 @@ public class Register extends AppCompatActivity {
         String email = txtEmail.getText().toString().trim();
         String password = txtPassword.getText().toString().trim();
 
+        if (email.isEmpty() || password.isEmpty()) {
+            Toast.makeText(Register.this, "Please enter email and password.", Toast.LENGTH_SHORT).show();
+            return; // Return without attempting to register
+        }
+
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
