@@ -12,7 +12,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Dashboard extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +25,24 @@ public class Dashboard extends AppCompatActivity {
 
         Button btnPomodoro = findViewById(R.id.btnPomodoro);
 
+
         // Set onClick Listener
         btnPomodoro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Create an Intent to start Pomodoro activity
                 Intent intent = new Intent(Dashboard.this, Home.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnCalendar = findViewById(R.id.btnCalendar);
+
+        btnCalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start Pomodoro activity
+                Intent intent = new Intent(Dashboard.this, CalendarHome.class);
                 startActivity(intent);
             }
         });

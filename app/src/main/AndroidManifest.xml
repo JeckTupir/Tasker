@@ -15,6 +15,15 @@
         android:theme="@style/Theme.Tasker"
         tools:targetApi="31">
         <activity
+            android:name=".WeekViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarHome"
+            android:exported="false" />
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity
