@@ -36,16 +36,6 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-        Button btnCalendar = findViewById(R.id.btnCalendar);
-
-        btnCalendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Create an Intent to start Pomodoro activity
-                Intent intent = new Intent(Dashboard.this, CalendarHome.class);
-                startActivity(intent);
-            }
-        });
 
         Button btnTodo = findViewById(R.id.btnTodo);
 
